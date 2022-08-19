@@ -1,0 +1,299 @@
+create database regisrtro;
+use prueva;
+create table tusuario(
+id varchar(6),
+nombre varchar(20),
+domicilio varchar(40),
+telefono int ,
+nick  varchar(6),
+contraseña varchar(20),
+tipoUsuario varchar(10),
+primary key (id)
+);
+
+
+
+use db_in;
+
+create table talumno(
+id varchar(3) 
+nombreAlumno varchar(20),
+grupo varchar(20)
+);
+insert into talumno  values(1222,'carlos','c');
+
+select *
+from talumno
+where id=12;
+
+select * from talumno where id=12;
+
+create database  instituto;
+use sistemainformacion;
+
+
+insert into tequipos values(?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+
+go
+
+select *
+from tusuario
+
+go
+
+update tequipos set estatus=?, comentarios_técnicos=?,revision_tecnica_de=? where tipo_equipo='"+IDcequipo+"'
+end
+select * from tequipos
+
+select estatus ,count(estatus) as cantidad from tequipos  group by estatus
+
+select id_equipo, tipo_equipo, marca, estatus from tequipos
+select id_equipo,tipo_equipo,marca,estatus from tequipos
+select nombre_cliente from tcliente where id_cliente ='1'
+
+
+create table tcliente
+(
+id_cliente int  primary key  AUTO_INCREMENT,
+nombre_cliente varchar(50),
+email_cliente varchar(50),
+tel_cliente varchar(50),
+dir_cliente varchar(50),
+ultima_modificacion varchar(50)
+)
+          select nombre_cliente from tcliente 
+
+insert into tcliente values ('6','cliCARLOS','cliCARLOS@GMIAL.COM','48751245',' AV INDEPENDENCIA','','')
+select id_cliente,nombre_cliente,email_cliente,tel_cliente,ultima_modificacion from tcliente
+create table tequipos
+(
+id_equipo int   primary key   AUTO_INCREMENT ,
+id_cliente  int,
+tipo_equipo varchar(50),
+marca varchar(50),
+modelo varchar(50),
+num_serie varchar(50),
+dia_ingreso varchar(50),
+mes_ingreso varchar(50),
+annio_ingreso varchar(50),
+/*
+un resumen de como esta ingresando el equipo
+*/
+observaciones longtext,
+estatus varchar(50),
+ultima_modificacion varchar(50),
+comentarios_técnicos longtext,
+revision_tecnica_de varchar(50)
+)
+select *
+from tequipos
+delete 
+from tequipos
+where id_equipo = 1
+update tcliente set nombre_cliente=?,email_cliente=?,tel_cliente=?,dir_cliente=?,ultima_modificacion=?
+INSERT INTO  tusuario values ('qaaaa'	,'qaaaa@fwq'	,'123455789',	'qweee',	'sssss','
+	administrador','	activo','	stifler')
+
+
+select nombre_clente from tcliente where id_cliente
+
+select id_usuario,nombre_usuario,username,tipo_nivel,estatus from tusuario
+
+create table talumno(
+id int AUTO_INCREMENT,
+nombreAlumno varchar(20)not null,
+grupo varchar(20) not	 null,
+primary key (id)
+)
+INSERT INTO  tusuario values ('qaaaa'	,'qaaaa@fwq'	,'123455789',	'qweee',	'sssss','
+	tecnico','	activo','	stifler')
+
+select *
+from tusuario;
+	
+ update tusuario set password=?   where username='"+user_update+"'   
+    
+    
+update tusuario set nombre_usuario=?,email=?,telefono=?,username=?,tipo_nivel=?,estatus=?
+where id_usuario='iD'
+
+
+UPDATE talumno
+ set  nombreAlumno=?,grupo=? where id=
+ use sistemainformacion
+ 
+ select id_usuario,nombre_usuario,email,telefono,username,password,tipo_nivel,estatus,registrado_por from tusuario
+
+
+
+create database cursoDesarrolloSoftware
+USE cursoDesarrolloSoftware
+
+create TABLE TLIBRO
+(
+IDLIBRO int auto_increment  not null,
+TITULO VARCHAR(30),
+AUTOR VARCHAR(30),
+GENERO VARCHAR(30),
+primary key (IDLIBRO)
+)
+UPDATE TLIBRO SET TITULO= '', AUTOR='', GENERO='' WHERE IDLIBRO
+INSERT INTO TLIBRO VALUES (1,'DON QUIJOTE','MIGEL DE SERVANTES','NOVELA');
+INSERT INTO tusuario VALUES (20,'hh','hh@gmail.com','787878788',
+'1','1','capturista','activo','Stifler');
+INSERT INTO TLIBRO VALUES (0,'DIPLOMACIA','HENRRY HESTEME','POLITICO');
+INSERT INTO TLIBRO VALUES (4,'VIEAJE AL CENTRO','JULIO VERNERO','AVENTURA');
+select *
+from TLIBRO
+where GENERO ='NOVELA'
+select * from TLIBRO where GENERO ='NOVELA'
+SELECT * FROM TLIBRO
+select * from TLIBRO where GENERO ='NOVELA'
+SELECT * FROM TLIBRO WHERE TITULO LIKE '%AL%'
+
+
+
+create database SUSTI
+USE SUSTI
+create  table TAutomovil(
+idAutomovil int auto_increment  not null,
+marca VARCHAR(20),
+modelo VARCHAR(20),
+nroPuertas int,
+color   VARCHAR(15),
+cilindraje FLOAT,
+peso      FLOAT,
+consumo   FLOAT,
+primary key (idAutomovil)
+)
+INSERT INTO TAutomovil VALUES (0,'yunday','r5',4,'blanco',4,'100','30');
+INSERT INTO TAutomovil VALUES (0,'yayis','u5',4,'negro',4,'200','20');
+INSERT INTO TAutomovil VALUES (0,'zur','t4',4,'berde',4,'300','15');
+INSERT INTO TAutomovil VALUES (0,'aros','d2',4,'amarillo',4,'180','20');
+INSERT INTO TAutomovil VALUES (0,'mazerati','fr5',4,'roza',4,'200','10');
+
+select *
+from TAutomovil
+go
+
+create database bdsusti
+use bdsusti
+
+create  table TAutomovil(
+idAutomovil int auto_increment  not null,
+marca VARCHAR(20),
+modelo VARCHAR(20),
+nroPuertas int,
+color   VARCHAR(15),
+cilindraje FLOAT,
+peso      FLOAT,
+consumo   FLOAT,
+primary key (idAutomovil)
+)
+
+INSERT INTO TAutomovil VALUES (0,'yunday','r5',4,'blanco',4,'100','30');
+INSERT INTO TAutomovil VALUES (0,'yayis','u5',4,'negro',4,'200','20');
+INSERT INTO TAutomovil VALUES (0,'zur','t4',4,'berde',4,'300','15');
+INSERT INTO TAutomovil VALUES (0,'aros','d2',4,'amarillo',4,'180','20');
+INSERT INTO TAutomovil VALUES (0,'mazerati','fr5',4,'roza',4,'200','10');
+use sistemainformacion
+select*
+from tcliente
+
+delete from tcliente
+where id_cliente = 1
+
+
+select*
+from tequipos
+
+delete from tequipos
+where id_equipo = 2
+
+
+select *
+from tusuario
+insert into tusuario values (0,'lucho','luis@gmail.com','485421578','luis_administrador','1','activo','administrador','lucho')
+insert into tusuario values (0,'carlos','carlos@gmail.com','485421578','carlos_administrador','1','activo','administrador','carlos')
+insert into tusuario values (0,'juan','juan@gmail.com','14521458','juan_tecnico','1','activo','capturista','lucho')
+
+select tipo_nivel,estatus from tusuario where username='luis_administrador' and password='1'
+delete  from tusuario
+where id_usuario = 21
+use sistemainformacion
+select *
+from tusuario
+group by marca
+
+
+DELETE FROM tusuario
+
+create database siI
+use siI
+create table tus(
+id_usuario  int AUTO_INCREMENT primary key,
+nombre_usuario varchar(40) ,
+email varchar(40) ,
+telefono varchar(9) ,
+username varchar(40) ,
+password varchar(40) ,
+tipo_nivel varchar(40) ,
+estatus varchar(40) ,
+registrado_por varchar(40)
+)
+insert into tus values('0','luis','luis@gmail.com','78451245','luis_administrador','1','administrador','activo','luis')
+
+delete  from tus
+where id_usuario = 2
+select*
+from tus
+select tipo_nivel,estatus
+from tus
+where username='luis_administrador'and password='1'
+
+
+
+
+create database cavina
+use  cavina
+insert into tus values (0,'luis1','luis1@gmialcp.com','1232123','1','1','activo','administrador','luis');
+select *from tus
+
+create table tusuariostus
+(
+ususario varchar(30) primary key,
+passwort varchar(30),
+saldo decimal (5,2),
+horas int, 
+minutos int,
+segundos int,
+)
+select*
+from tusuarios
+use cavina
+
+insert into tusuarios values ('1','1',999.3,0,0,0);
+insert into tusuarios values ('sesar','1',1.3);
+insert into tusuarios values ('luis','1',0.0);
+insert into tusuarios values ('carlos','1',3.0);
+
+
+create table tadministrador
+(
+ususario_admi varchar(30) primary key,
+passwort_admi varchar(30)
+)
+insert into tadministrador values('1admi','1admi');
+
+select ususario,saldo
+from tusuarios
+where ususario='1' and  passwort ='1'
+
+
+
+
+
+
+
+
+
